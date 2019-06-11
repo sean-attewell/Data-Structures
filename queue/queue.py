@@ -101,5 +101,11 @@ class Queue:
             self.size -= 1
             return head_removed
 
+        # shorter version
+        # if self.size == 0:
+        #     return None
+        # else:
+        #     return self.storage.remove_head()
+
     def len(self):
         return self.size
