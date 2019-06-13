@@ -3,7 +3,9 @@ class Heap:
         self.storage = []
 
     def insert(self, value):
-        pass
+        self.storage.append(value)
+        i = len(self.storage) - 1
+        self._bubble_up(i)
 
     def delete(self):
         pass

@@ -38,7 +38,7 @@ class BinarySearchTree:
             else:
                 return False
 
-    # must be an implied False returned somewhere
+    # returns None which is a falsy expression
     # def contains(self, target):
     #     if target == self.value:
     #         return True
@@ -61,3 +61,11 @@ class BinarySearchTree:
             self.left.for_each(cb)
         if self.right != None:
             self.right.for_each(cb)
+
+
+# OK so with 'contains' and 'get_max' the tests are expecting something back
+# so the recursive function needs to return when it calls itself
+# to spit out whatever from the nested loops
+
+# insert and for_each are just modifying the tree, tests just
+# test that the tree has been modified.
